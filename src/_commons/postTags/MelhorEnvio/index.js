@@ -30,7 +30,7 @@ class PostTagME extends Component {
     return (
       <div className='container'>
         <Grid relaxed className="Grid">
-          <Grid.Row className="firstRow">
+          <Grid.Row columns='1' className="firstRow">
             <Grid.Column>
               <img src="https://ajrepositorio.s3.amazonaws.com/images/jadlog.png" alt="Logo Jadlog"></img>
               <img src="https://ajrepositorio.s3.amazonaws.com/images/melhorenvio.png" alt="Logo Melhor Envio"></img>
@@ -38,7 +38,7 @@ class PostTagME extends Component {
           </Grid.Row>
 
           <Grid.Row columns='3' className="secondRow">
-            <Grid.Column width='10' className="secondRow-firstColumn">
+            <Grid.Column width='8' className="secondRow-firstColumn">
               <Grid>
                 <Grid.Row columns='1' className="secondRow-firstColumn-firstRow">
                   <Grid.Column>2</Grid.Column>
@@ -54,19 +54,19 @@ class PostTagME extends Component {
               </Grid>
             </Grid.Column>
 
-            <Grid.Column width='2' className="secondRow-secondColumn">
+            <Grid.Column width='4' className="secondRow-secondColumn">
               <Grid.Row>2</Grid.Row>
               <Grid.Row>6</Grid.Row>
             </Grid.Column>
 
-            <Grid.Column width='2' className="secondRow-thirdColumn">7</Grid.Column>
+            <Grid.Column width='4' className="secondRow-thirdColumn">7</Grid.Column>
           </Grid.Row>
 
-          <Grid.Row className="thirdRow">
+          <Grid.Row columns='1' className="thirdRow">
             <Grid.Column>8</Grid.Column>
           </Grid.Row>
 
-          <Grid.Row className="fourthRow">
+          <Grid.Row columns='1' className="fourthRow">
             <Grid.Column>
               {/*<Barcode
                 {...this.barcodeOptions}
