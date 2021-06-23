@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Grid {
+    margin-top: 5px;
+    border: 2px solid black;
+
+    .firstRow {
+
+      :nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        
+        :nth-child(1) {
+          width: 100px;
+        }
+
+        :nth-child(2) {
+          width: 100px;
+        }
+      }
+    }
+
+    .secondRow {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 0 !important;
+
+      .secondRow-firstColumn {
+        padding: 0 !important;
+
+        .secondRow-firstColumn-firstRow {
+          border-bottom: 1px solid black;
+          
+        }
+
+        .secondRow-firstColumn-secondRow {
+          padding: 0 !important;
+
+          :nth-child(1) {
+            padding-right: 0 !important;
+            border-right: 1px solid black;
+          }
+          
+          :nth-child(2) {
+            padding: 0 !important;
+          }
+        }
+
+        .secondRow-firstColumn-thirdRow {
+          padding-top: 0 !important;
+          border-top: 1px solid black;
+
+          :nth-child(1) {
+            padding-right: 0 !important;
+            border-right: 1px solid black;
+          }
+          
+          :nth-child(2) {
+            padding: 0 !important;
+          }
+        }
+      }
+
+      .secondRow-secondColumn {
+        border-left: 1px solid black;
+        padding: 0 !important;
+
+        :nth-child(2) {
+          border-top: solid 1px black;
+        }
+      }
+
+      .secondRow-thirdColumn {
+        border-left: 1px solid black;
+        padding: 0 !important;
+      }
+    }
+
+    .thirdRow {
+      padding: 10px, 0, 10px, 0 !important;
+    }
+
+    .fourthRow {
+      border-top: 1px solid black;
+    }
+  }
+}
