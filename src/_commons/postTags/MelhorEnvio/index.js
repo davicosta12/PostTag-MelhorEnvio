@@ -28,8 +28,8 @@ class PostTagME extends Component {
   render() {
 
     return (
-      <div className='container'>
-        <Grid relaxed className="Grid">
+      <div className='postTagMe-container'>
+        <Grid>
           <Grid.Row columns='1' className="firstRow">
             <Grid.Column>
               <img src="https://ajrepositorio.s3.amazonaws.com/images/jadlog.png" alt="Logo Jadlog"></img>
@@ -37,40 +37,72 @@ class PostTagME extends Component {
             </Grid.Column>
           </Grid.Row>
 
-          <Grid.Row columns='3' className="secondRow">
-            <Grid.Column width='8' className="secondRow-firstColumn">
+          <Grid.Row columns='2' className="secondRow">
+
+            <Grid.Column width='12'>
               <Grid>
-                <Grid.Row columns='1' className="secondRow-firstColumn-firstRow">
-                  <Grid.Column>2</Grid.Column>
+                <Grid.Row columns='2' className='endereco-destino'>
+                  <Grid.Column width='12'>
+                    Endereço do dest.<br/>
+                    Endereço do dest.<br/>
+                    Endereço do dest.
+                  </Grid.Column>
+                  <Grid.Column width='4'>
+                    Espaço vazio
+                  </Grid.Column>
                 </Grid.Row>
-                <Grid.Row columns='2' className="secondRow-firstColumn-secondRow">
-                  <Grid.Column>89</Grid.Column>
-                  <Grid.Column>40</Grid.Column>
-                </Grid.Row>
-                <Grid.Row columns='2' className="secondRow-firstColumn-thirdRow">
-                  <Grid.Column>3</Grid.Column>
-                  <Grid.Column>4</Grid.Column>
+
+                <Grid.Row columns='2'>
+                  <Grid.Column width='12'>
+
+                    <Grid>
+                      <Grid.Row columns='2'>
+                        <Grid.Column width='12' className='contato'>
+                          Contato/Telefone
+                          Contato/Telefone
+                          Contato/Telefone
+                        </Grid.Column>
+                        <Grid.Column width='4'>
+                          Pacotes
+                        </Grid.Column>
+                      </Grid.Row>
+
+                      <Grid.Row columns='2'>
+                        <Grid.Column width='12' className='nf'>
+                          NF
+                        </Grid.Column>
+                        <Grid.Column width='4'>
+                          1
+                        </Grid.Column>
+                      </Grid.Row>
+                    </Grid>
+
+                  </Grid.Column>
+                  <Grid.Column width='2' className='remetente'>
+                    Remetente na vertical
+                  </Grid.Column>
                 </Grid.Row>
               </Grid>
             </Grid.Column>
 
-            <Grid.Column width='4' className="secondRow-secondColumn">
-              <Grid.Row>2</Grid.Row>
-              <Grid.Row>6</Grid.Row>
+            <Grid.Column width='1' className="barcode-vertical">
+              Barcode na vertical
             </Grid.Column>
 
-            <Grid.Column width='4' className="secondRow-thirdColumn">7</Grid.Column>
           </Grid.Row>
 
           <Grid.Row columns='1' className="thirdRow">
-            <Grid.Column>8</Grid.Column>
+            <Grid.Column>
+              3ª
+            </Grid.Column>
           </Grid.Row>
 
           <Grid.Row columns='1' className="fourthRow">
             <Grid.Column>
-              {/*<Barcode
+              <Barcode
                 {...this.barcodeOptions}
-              /> */}
+                value={'000000000000000000'}
+              />
             </Grid.Column>
           </Grid.Row>
         </Grid>
