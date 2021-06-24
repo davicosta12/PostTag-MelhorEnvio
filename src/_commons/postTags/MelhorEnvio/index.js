@@ -109,9 +109,11 @@ class PostTagME extends Component {
 
                       <Grid.Row columns='2' style={{ paddingTop: 0 }}>
                         <Grid.Column width='12' className='nf'>
-                          NF
+                          NF<br/>
+                          NF<br/>
+                          9248<br/>
                         </Grid.Column>
-                        <Grid.Column width='4'>
+                        <Grid.Column width='4' className='package'>
                           1
                         </Grid.Column>
                       </Grid.Row>
@@ -119,17 +121,19 @@ class PostTagME extends Component {
 
                   </Grid.Column>
                   <Grid.Column width='2' className='remetente'>
-                    Remetente na vertical
+                    <div>
+                      Remetente na vertical
+                    </div>
                   </Grid.Column>
                 </Grid.Row>
               </Grid>
             </Grid.Column>
 
             <Grid.Column width='1' className="barcode-vertical">
-              {/* <Barcode
+              <Barcode
                 {...this.verticalBarcodeOptions}
                 value={'000000000000000000'}
-             />*/}
+             />
             </Grid.Column>
 
           </Grid.Row>

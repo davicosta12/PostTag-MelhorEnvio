@@ -12,18 +12,14 @@
     margin-top: 5px;
     border: 1px solid black;
 
-    .barcode-vertical {
-      
-      :nth-child(1) {
-        
-      }
-      
-    }
-
     .barcode-vertical,
     .remetente {
       transform: rotate(90deg);
-      transform-origin: center;
+      transform-origin: top;
+      > * {
+        position: absolute;
+        bottom: 100%;
+      }
     }
 
     .firstRow {
@@ -50,6 +46,11 @@
 
       .pacotes {
         border-bottom: 1px solid;
+        border-right: 1px solid;
+      }
+
+      .package {
+        border-right: 1px solid;
       }
       
       .contato,
