@@ -5,17 +5,57 @@ import './postTagME.scss';
 
 class PostTagME extends Component {
 
-  barcodeOptions = {
-    width: 2,
-    height: 100,
+  fourthBarcodeOptions = {
+    width: 1.7,
+    height: 30,
     format: "CODE128",
-    displayValue: true,
+    displayValue: false,
     fontOptions: "",
     font: "monospace",
     textAlign: "center",
     textPosition: "bottom",
     textMargin: 2,
-    fontSize: 20,
+    fontSize: 10,
+    background: "#ffffff",
+    lineColor: "#000000",
+    margin: 10,
+    marginTop: undefined,
+    marginBottom: undefined,
+    marginLeft: undefined,
+    marginRight: undefined
+  }
+
+  thirdBarcodeOptions = {
+    width: 2.5,
+    height: 60,
+    format: "CODE128",
+    displayValue: false,
+    fontOptions: "",
+    font: "monospace",
+    textAlign: "center",
+    textPosition: "bottom",
+    textMargin: 2,
+    fontSize: 10,
+    background: "#ffffff",
+    lineColor: "#000000",
+    margin: 10,
+    marginTop: undefined,
+    marginBottom: undefined,
+    marginLeft: undefined,
+    marginRight: undefined
+  }
+
+  verticalBarcodeOptions = {
+    width: 1,
+    height: 60,
+    format: "CODE128",
+    displayValue: false,
+    fontOptions: "",
+    font: "monospace",
+    textAlign: "center",
+    textPosition: "bottom",
+    textMargin: 2,
+    fontSize: 10,
     background: "#ffffff",
     lineColor: "#000000",
     margin: 10,
@@ -43,8 +83,8 @@ class PostTagME extends Component {
               <Grid>
                 <Grid.Row columns='2' className='endereco-destino'>
                   <Grid.Column width='12'>
-                    Endereço do dest.<br/>
-                    Endereço do dest.<br/>
+                    Endereço do dest.<br />
+                    Endereço do dest.<br />
                     Endereço do dest.
                   </Grid.Column>
                   <Grid.Column width='4'>
@@ -56,18 +96,18 @@ class PostTagME extends Component {
                   <Grid.Column width='12'>
 
                     <Grid>
-                      <Grid.Row columns='2'>
+                      <Grid.Row columns='2' style={{ padding: 0 }}>
                         <Grid.Column width='12' className='contato'>
                           Contato/Telefone
                           Contato/Telefone
                           Contato/Telefone
                         </Grid.Column>
-                        <Grid.Column width='4'>
+                        <Grid.Column width='4' className="pacotes">
                           Pacotes
                         </Grid.Column>
                       </Grid.Row>
 
-                      <Grid.Row columns='2'>
+                      <Grid.Row columns='2' style={{ paddingTop: 0 }}>
                         <Grid.Column width='12' className='nf'>
                           NF
                         </Grid.Column>
@@ -86,21 +126,28 @@ class PostTagME extends Component {
             </Grid.Column>
 
             <Grid.Column width='1' className="barcode-vertical">
-              Barcode na vertical
+              {/* <Barcode
+                {...this.verticalBarcodeOptions}
+                value={'000000000000000000'}
+             />*/}
             </Grid.Column>
 
           </Grid.Row>
 
           <Grid.Row columns='1' className="thirdRow">
             <Grid.Column>
-              3ª
+              <h3>MELHOR ENVIO</h3>
+              <Barcode
+                {...this.thirdBarcodeOptions}
+                value={'000000000000000000'}
+              />
             </Grid.Column>
           </Grid.Row>
 
           <Grid.Row columns='1' className="fourthRow">
             <Grid.Column>
               <Barcode
-                {...this.barcodeOptions}
+                {...this.fourthBarcodeOptions}
                 value={'000000000000000000'}
               />
             </Grid.Column>

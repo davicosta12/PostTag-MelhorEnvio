@@ -12,6 +12,14 @@
     margin-top: 5px;
     border: 1px solid black;
 
+    .barcode-vertical {
+      
+      :nth-child(1) {
+        
+      }
+      
+    }
+
     .barcode-vertical,
     .remetente {
       transform: rotate(90deg);
@@ -30,9 +38,18 @@
     
     .secondRow {
       border-bottom: 1px solid;
+      padding: 0 !important;
       
       > :nth-child(1) {
         border-right: 1px solid;
+      }
+
+      .contato {
+        border-bottom: 1px solid;
+      }
+
+      .pacotes {
+        border-bottom: 1px solid;
       }
       
       .contato,
@@ -41,12 +58,36 @@
       }
       .endereco-destino {
         border-bottom: 1px solid;
+        padding-bottom: 0;
+
+        :nth-child(2) {
+          border-left: 1px solid;;
+        }
       } 
     }
 
     .thirdRow {
       border-bottom: 1px solid;
-      padding: 10px, 0, 10px, 0 !important;
+      padding: 10px, 0, 0, 0 !important;
+
+      :nth-child(1) {
+        h3 {
+          text-align: center;
+        }
+        :nth-child(2) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+    }
+
+    .fourthRow {
+
+      :nth-child(1) {
+        display: flex;
+        justify-content: center;
+      }
     }
 
 
