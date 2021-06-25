@@ -50,7 +50,17 @@
       }
 
       .package {
-        border-right: 1px solid;
+        border-right: 1px solid; 
+
+        > div {
+          min-height: 100%;
+          font-size: 48px;
+          font-weight: 900;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
       
       .contato,
@@ -69,19 +79,46 @@
 
     .thirdRow {
       border-bottom: 1px solid;
-      padding: 10px, 0, 0, 0 !important;
+      padding: 0 !important;
 
-      :nth-child(1) {
-        h3 {
+        :first-child {
           text-align: center;
-        }
-        :nth-child(2) {
-          display: flex;
-          justify-content: center;
+
+         .Package {
+           margin: 0;
+           padding-left: 5px;
+           font-size: 14px;
+           font-weight: 800;
+           text-transform: uppercase;
+          }
+
+          > div {
+            position: relative;
+            
+            .div-TrackAndSpan {
+                text-align: left;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+              > p {
+                margin: 0;
+              }
+              
+              > span {
+                border: solid 1px;
+                font-weight: 800;
+                padding: 1px 5px;
+              }
+            }
+
+            h3 {
+              margin-top: 1em;
+              display: inline-block;
+            }
+          }
         }
       }
-
-    }
 
     .fourthRow {
 

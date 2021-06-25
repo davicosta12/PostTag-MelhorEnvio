@@ -46,7 +46,7 @@ class PostTagME extends Component {
   }
 
   verticalBarcodeOptions = {
-    width: 1,
+    width: 1.1,
     height: 60,
     format: "CODE128",
     displayValue: false,
@@ -113,8 +113,8 @@ class PostTagME extends Component {
                           NF<br/>
                           9248<br/>
                         </Grid.Column>
-                        <Grid.Column width='4' className='package'>
-                          1
+                        <Grid.Column textAlign="center" width='4' className='package'>
+                          <div>1</div>
                         </Grid.Column>
                       </Grid.Row>
                     </Grid>
@@ -140,7 +140,14 @@ class PostTagME extends Component {
 
           <Grid.Row columns='1' className="thirdRow">
             <Grid.Column>
-              <h3>MELHOR ENVIO</h3>
+              <p className="Package">Package</p>
+              <div>
+                <div className="div-TrackAndSpan">
+                  <p>Track</p>
+                  <span>1</span>
+                </div>
+                <h3>MELHOR ENVIO</h3>
+              </div>
               <Barcode
                 {...this.thirdBarcodeOptions}
                 value={'000000000000000000'}
