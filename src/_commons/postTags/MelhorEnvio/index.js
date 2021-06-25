@@ -140,13 +140,13 @@ class PostTagME extends Component {
 
           <Grid.Row columns='1' className="thirdRow">
             <Grid.Column>
-              <p className="Package">Package</p>
+              <p className="package">Package</p>
               <div>
                 <div className="div-TrackAndSpan">
-                  <p>Track</p>
+                  <p className="track">Track</p>
                   <span>1</span>
                 </div>
-                <h3>MELHOR ENVIO</h3>
+                <h3 className="title-MelhorEnvio">MELHOR ENVIO</h3>
               </div>
               <Barcode
                 {...this.thirdBarcodeOptions}

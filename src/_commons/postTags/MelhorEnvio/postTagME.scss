@@ -84,7 +84,7 @@
         :first-child {
           text-align: center;
 
-         .Package {
+         .package {
            margin: 0;
            padding-left: 1px;
            font-size: 13px;
@@ -101,7 +101,7 @@
                 left: 0;
                 bottom: 0;
 
-              > p {
+              .track {
                 margin: 0;
               }
               
@@ -112,7 +112,7 @@
               }
             }
 
-            h3 {
+            .title-MelhorEnvio {
               margin-top: 1em;
               display: inline-block;
             }
