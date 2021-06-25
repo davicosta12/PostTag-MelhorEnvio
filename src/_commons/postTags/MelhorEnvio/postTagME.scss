@@ -93,13 +93,10 @@
           }
 
           > div {
-            position: relative;
+            display: flex;
             
             .div-TrackAndSpan {
                 text-align: left;
-                position: absolute;
-                left: 0;
-                bottom: 0;
 
               .track {
                 margin: 0;
@@ -114,7 +111,7 @@
 
             .title-MelhorEnvio {
               margin-top: 1em;
-              display: inline-block;
+              width: 100%;
             }
           }
         }
